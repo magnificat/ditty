@@ -18,9 +18,9 @@ D        G             h       A
  Dotknij naszych serc – rozpal ognia żar  /x2
 
         e               fis  e                fis
-         Dziś przenikaj nas - tchnieniem mocy Swej
+         Dziś przenikaj nas – tchnieniem mocy Swej
     
         e                  fis    G          Fis
-         Bądź nam światłem dnia - i nadzieją serc  /x2
+         Bądź nam światłem dnia – i nadzieją serc  /x2
 
 ```
