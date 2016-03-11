@@ -3,18 +3,27 @@ const fs = require('fs');
 
 const ditty = require('.');
 
-const result = ditty(
+const song = ditty(
   fs.readFileSync(`${__dirname}/test/fixtures/A weird song.ditty`, 'utf8')
 );
 
 test((assert) => {
   assert.is(
-    result.number,
+    song.number,
     '1.02'
   );
 
   assert.is(
-    result.title,
+    song.title,
     'My weird song'
+  );
+
+  assert.true(
+    Array.isArray(song.parts)
+  );
+
+  assert.is(
+    song.parts.length,
+    4
   );
 });
