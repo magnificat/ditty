@@ -1,3 +1,5 @@
+const indentation = require('detect-indent');
+
 const mainPattern = new RegExp(
   '^' +
     '(?:([\\d.]*\\d) *\\| *)?' +  // Optional number, followed by a pipe,
@@ -13,10 +15,16 @@ module.exports = (input) => {
 
   const body = match[3];
   const rawParts = body.split(/\n{3,}/);
+  const parts = rawParts.map(partString => ({
+    type: (indentation(partString).amount >= 4 ?
+      'refrain' :
+      'stanza'
+    ),
+  }));
 
   return {
     number: match[1],
     title: match[2],
-    parts: rawParts,
+    parts,
   };
 };

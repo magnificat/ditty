@@ -26,4 +26,9 @@ test((assert) => {
     song.parts.length,
     4
   );
+
+  assert.same(
+    song.parts.map(part => part.type),
+    ['stanza', 'refrain', 'stanza', 'refrain']
+  );
 });

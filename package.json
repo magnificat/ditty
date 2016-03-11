@@ -21,5 +21,8 @@
     "ava": "^0.13.0",
     "eslint": "^2.3.0",
     "eslint-config-airbnb": "^6.1.0"
+  },
+  "dependencies": {
+    "detect-indent": "^4.0.0"
   }
 }
