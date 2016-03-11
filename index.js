@@ -17,10 +17,12 @@ module.exports = (input) => {
   const rawParts = body.split(/\n{3,}/);
   const parts = rawParts.map(partString => {
     const lines = partString.split(/\n{2,}/);
-    const lyricsLines = lines.map(line => line.replace(
-      /(?:[^]*\n|^)\s*/, ''
+    const lyricsLines = lines.map((line) => (
+      `${
+        line.replace(/(?:[^]*\n|^)\s*/, '')
+      }\n`
     ));
-    const lyrics = lyricsLines.join('\n');
+    const lyrics = lyricsLines.join('');
 
     const type = (indentation(partString).amount >= 4 ?
       'refrain' :

@@ -35,24 +35,24 @@ test((assert) => {
   assert.same(
     song.parts[0].lyrics,
     'This is a stanza\n' +
-    'without any chords.'
+    'without any chords.\n'
   );
 
   assert.same(
     song.parts[1].lyrics,
     'This is a refrain\n' +
-    'Tralalalalala'
+    'Tralalalalala\n'
   );
 
   assert.same(
     song.parts[2].lyrics,
     'This stanza is indented\n' +
-    'and has some wild chords around'
+    'and has some wild chords around\n'
   );
 
   assert.same(
     song.parts[3].lyrics,
     'This is a refrain\n' +
-    'ridiculously indented, hey!'
+    'ridiculously indented, hey!\n'
   );
 });
