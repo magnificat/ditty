@@ -3,11 +3,11 @@ const fs = require('fs');
 
 const ditty = require('.');
 
-const song = ditty(
-  fs.readFileSync(`${__dirname}/test/fixtures/A weird song.ditty`, 'utf8')
-);
+test('The weird song', (assert) => {
+  const song = ditty(fs.readFileSync(
+    `${__dirname}/test/fixtures/A weird song.ditty`, 'utf8'
+  ));
 
-test((assert) => {
   assert.is(
     song.number,
     '1.02'
@@ -54,5 +54,16 @@ test((assert) => {
     song.parts[3].lyrics,
     'This is a refrain\n' +
     'ridiculously indented, hey!\n'
+  );
+});
+
+test('“Jak ożywczy deszcz”', (assert) => {
+  const song = ditty(fs.readFileSync(
+    `${__dirname}/test/fixtures/Jak ożywczy deszcz.ditty`, 'utf8'
+  ));
+
+  assert.is(
+    song.parts[1].type,
+    'refrain'
   );
 });

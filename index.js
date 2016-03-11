@@ -1,5 +1,3 @@
-const indentation = require('detect-indent');
-
 const mainPattern = new RegExp(
   '^' +
     '(?:([\\d.]*\\d) *\\| *)?' +  // Optional number, followed by a pipe,
@@ -24,7 +22,8 @@ module.exports = (input) => {
     ));
     const lyrics = lyricsLines.join('');
 
-    const type = (indentation(partString).amount >= 4 ?
+    const firstLineIndent = partString.match(/^ */)[0];
+    const type = (firstLineIndent.length >= 4 ?
       'refrain' :
       'stanza'
     );

@@ -63,7 +63,7 @@ Dotknij naszych serc – rozpal ognia żar!  /×2
 `
       },
       {
-        type: 'stanza',
+        type: 'refrain',
         lyrics:
 `Dziś przenikaj nas – tchnieniem mocy Swej.
 Bądź nam światłem dnia – i nadzieją serc!  /×2

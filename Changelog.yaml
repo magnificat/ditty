@@ -1,0 +1,8 @@
+1.0.1:
+  date: 2016-03-11
+  fixed bugs:
+    - Fixed wrong refrain detection.
+
+1.0.0:
+  date: 2016-03-11
+  note: Initial release.
