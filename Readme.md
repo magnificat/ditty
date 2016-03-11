@@ -17,7 +17,7 @@
 
 See for yourself. Here's an example song written in ditty:
 
-```
+```markdown
 12 | Jak ożywczy deszcz
 =======================
 
