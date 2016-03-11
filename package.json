@@ -1,0 +1,25 @@
+{
+  "name": "ditty",
+  "version": "1.0.0",
+  "description": "A markdown-like parser for lyrics and chords",
+  "scripts": {
+    "develop": "ava --watch",
+    "lint": "eslint .",
+    "test": "lint && ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magnificat/ditty.git"
+  },
+  "author": "Tomek Wiszniewski <t.wiszniewski@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/magnificat/ditty/issues"
+  },
+  "homepage": "https://github.com/magnificat/ditty#readme",
+  "devDependencies": {
+    "ava": "^0.13.0",
+    "eslint": "^2.3.0",
+    "eslint-config-airbnb": "^6.1.0"
+  }
+}
