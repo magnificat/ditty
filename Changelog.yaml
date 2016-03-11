@@ -1,7 +1,8 @@
-1.0.1:
+1.0.2:
   date: 2016-03-11
   fixed bugs:
     - Added missing license info.
+    - Put the package tarball on a diet.
 
 1.0.1:
   date: 2016-03-11

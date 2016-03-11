@@ -16,6 +16,12 @@
   "bugs": {
     "url": "https://github.com/magnificat/ditty/issues"
   },
+  "files": [
+    "/*.md",
+    "/Changelog.yaml",
+    "**/*.js",
+    "!/test.js"
+  ],
   "homepage": "https://github.com/magnificat/ditty#readme",
   "devDependencies": {
     "ava": "^0.13.0",
