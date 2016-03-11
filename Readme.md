@@ -72,3 +72,8 @@ Bądź nam światłem dnia – i nadzieją serc!  /×2
     ],
   }
 ```
+
+
+## License
+
+[MIT](./License.md) © [Tomek Wiszniewski](https://github.com/tomekwi)

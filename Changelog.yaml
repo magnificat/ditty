@@ -1,6 +1,11 @@
 1.0.1:
   date: 2016-03-11
   fixed bugs:
+    - Added missing license info.
+
+1.0.1:
+  date: 2016-03-11
+  fixed bugs:
     - Fixed wrong refrain detection.
 
 1.0.0:
