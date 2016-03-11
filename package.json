@@ -5,7 +5,7 @@
   "scripts": {
     "develop": "ava --watch",
     "lint": "eslint .",
-    "test": "lint && ava"
+    "test": "npm run lint && ava"
   },
   "repository": {
     "type": "git",
