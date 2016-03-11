@@ -42,13 +42,13 @@ D        G             h       A
 This repo comes with a simple parser. Install it on node v4.0+ with:
 
 ```sh
-npm install ditty
+npm install parse-ditty
 ```
 
 Here’s the output for the above song:
 
 ```js
-▸ const ditty = require('ditty');
+▸ const ditty = require('parse-ditty');
 
 ▸ ditty(inputSameAsAbove);
 ◂ {

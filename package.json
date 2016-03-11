@@ -1,5 +1,5 @@
 {
-  "name": "ditty",
+  "name": "parse-ditty",
   "version": "0.0.0",
   "description": "A markdown-like parser for lyrics and chords",
   "scripts": {
