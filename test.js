@@ -31,4 +31,28 @@ test((assert) => {
     song.parts.map(part => part.type),
     ['stanza', 'refrain', 'stanza', 'refrain']
   );
+
+  assert.same(
+    song.parts[0].lyrics,
+    'This is a stanza\n' +
+    'without any chords.'
+  );
+
+  assert.same(
+    song.parts[1].lyrics,
+    'This is a refrain\n' +
+    'Tralalalalala'
+  );
+
+  assert.same(
+    song.parts[2].lyrics,
+    'This stanza is indented\n' +
+    'and has some wild chords around'
+  );
+
+  assert.same(
+    song.parts[3].lyrics,
+    'This is a refrain\n' +
+    'ridiculously indented, hey!'
+  );
 });
