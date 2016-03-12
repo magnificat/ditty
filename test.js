@@ -67,3 +67,14 @@ test('“Jak ożywczy deszcz”', (assert) => {
     'refrain'
   );
 });
+
+test('“Duchu Święty”', (assert) => {
+  const song = ditty(fs.readFileSync(
+    `${__dirname}/test/fixtures/Duchu Święty.ditty`, 'utf8'
+  ));
+
+  assert.is(
+    song.parts[1].type,
+    'stanza'
+  );
+});

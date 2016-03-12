@@ -1,3 +1,8 @@
+1.0.3:
+  date: 2016-03-12
+  fixed bugs:
+    - Fixed stanza detection when chords are present.
+
 1.0.2:
   date: 2016-03-11
   fixed bugs:

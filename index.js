@@ -15,14 +15,15 @@ module.exports = (input) => {
   const rawParts = body.split(/\n{3,}/);
   const parts = rawParts.map(partString => {
     const lines = partString.split(/\n{2,}/);
-    const lyricsLines = lines.map((line) => (
+    const rawLyricsLines = lines.map((line) => (
       `${
-        line.replace(/(?:[^]*\n|^)\s*/, '')
+        line.replace(/[^]*\n/, '')
       }\n`
     ));
+    const lyricsLines = rawLyricsLines.map(line => line.replace(/^ */, ''));
     const lyrics = lyricsLines.join('');
 
-    const firstLineIndent = partString.match(/^ */)[0];
+    const firstLineIndent = rawLyricsLines[0].match(/^ */)[0];
     const type = (firstLineIndent.length >= 4 ?
       'refrain' :
       'stanza'
