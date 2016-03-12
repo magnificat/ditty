@@ -1,6 +1,6 @@
 {
   "name": "parse-ditty",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A markdown-like parser for lyrics and chords",
   "scripts": {
     "develop": "ava --watch",
