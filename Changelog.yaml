@@ -1,3 +1,10 @@
+1.1.0:
+  date: 2016-03-18
+  new features:
+    - We’ve renamed the `parts` property to `blocks` to align it with the docs.
+      `parts` is now deprecated, but it’ll continue to work until the next
+      major release.
+
 1.0.3:
   date: 2016-03-12
   fixed bugs:

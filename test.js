@@ -19,39 +19,39 @@ test('The weird song', (assert) => {
   );
 
   assert.true(
-    Array.isArray(song.parts)
+    Array.isArray(song.blocks)
   );
 
   assert.is(
-    song.parts.length,
+    song.blocks.length,
     4
   );
 
   assert.same(
-    song.parts.map(part => part.type),
+    song.blocks.map(part => part.type),
     ['stanza', 'refrain', 'stanza', 'refrain']
   );
 
   assert.same(
-    song.parts[0].lyrics,
+    song.blocks[0].lyrics,
     'This is a stanza\n' +
     'without any chords.\n'
   );
 
   assert.same(
-    song.parts[1].lyrics,
+    song.blocks[1].lyrics,
     'This is a refrain\n' +
     'Tralalalalala\n'
   );
 
   assert.same(
-    song.parts[2].lyrics,
+    song.blocks[2].lyrics,
     'This stanza is indented\n' +
     'and has some wild chords around\n'
   );
 
   assert.same(
-    song.parts[3].lyrics,
+    song.blocks[3].lyrics,
     'This is a refrain\n' +
     'ridiculously indented, hey!\n'
   );
@@ -63,7 +63,7 @@ test('“Jak ożywczy deszcz”', (assert) => {
   ));
 
   assert.is(
-    song.parts[1].type,
+    song.blocks[1].type,
     'refrain'
   );
 });
@@ -74,7 +74,7 @@ test('“Duchu Święty”', (assert) => {
   ));
 
   assert.is(
-    song.parts[1].type,
+    song.blocks[1].type,
     'stanza'
   );
 });

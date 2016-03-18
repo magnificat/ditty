@@ -13,7 +13,7 @@ module.exports = (input) => {
 
   const body = match[3];
   const rawParts = body.split(/\n{3,}/);
-  const parts = rawParts.map(partString => {
+  const blocks = rawParts.map(partString => {
     const lines = partString.split(/\n{2,}/);
     const rawLyricsLines = lines.map((line) => (
       `${
@@ -35,6 +35,7 @@ module.exports = (input) => {
   return {
     number: match[1],
     title: match[2],
-    parts,
+    blocks,
+    parts: blocks,  // deprecated!
   };
 };
