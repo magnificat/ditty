@@ -24,7 +24,7 @@
   ],
   "homepage": "https://github.com/magnificat/ditty#readme",
   "devDependencies": {
-    "ava": "^0.14.0",
+    "ava": "^0.15.1",
     "eslint": "^2.3.0",
     "eslint-config-airbnb": "^6.1.0"
   }
